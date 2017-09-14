@@ -34,3 +34,4 @@ $ docker run -i -t debian-php7 /bin/bash
   - php7.0-ldap
   - php7.0-zip
   - php7.0-xml
+  - php7.0-soap

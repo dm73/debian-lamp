@@ -37,6 +37,7 @@ RUN \
                 php7.0-ldap \
                 php7.0-zip \
                 php7.0-xml \
+                php7.0-soap \
                 libapache2-mod-php && \
 
 

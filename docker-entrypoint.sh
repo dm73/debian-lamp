@@ -9,4 +9,7 @@ else
     [[ -f $XDEBUG_INI ]] && rm -f $XDEBUG_INI
 fi
 
+echo 'Starting mysql'
+/etc/init.d/mysql start
+
 exec "$@"

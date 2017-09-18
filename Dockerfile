@@ -9,6 +9,7 @@ WORKDIR /tmp
 RUN \
   apt-get update && \
   apt-get -y install wget && \
+  apt-get install -y mysql-server && \
 
   wget -O - http://www.dotdeb.org/dotdeb.gpg | apt-key add - && \
   echo "deb http://packages.dotdeb.org jessie all" > /etc/apt/sources.list.d/dotdeb.list && \
@@ -63,4 +64,5 @@ CMD ["/usr/bin/supervisord"]
 COPY docker-entrypoint.sh /
 ENTRYPOINT ["/docker-entrypoint.sh"]
 
-EXPOSE 80
+
+EXPOSE 80 3306

@@ -12,6 +12,7 @@ $ docker run -i -t debian-php7 /bin/bash
 
 ## Utils 
 - wget
+- mysql-server
 - composer
 - git
 - curl
